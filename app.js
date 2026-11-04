@@ -22,5 +22,23 @@ app.controller('studentcontroller', function($scope)
         "4MH25IS057",
         "4MH25IS025",
     ];
+    $scope.addstudents=function(){
+        if($scope.name.trim()!==""){
+            $scope.students.push($scope.name);
+            $scope.name="";
+        }
+        else{
+            alert("please enter a student name:")
+        }
+    };
+    $scope.addUSN=function(){
+        if($scope.usn.trim()!==""){
+            $scope.USN.push($scope.usn);
+            $scope.usn="";
+        }
+        else{
+            alert("please enter a student usn:")
+        }
+    };
 }
 );

@@ -21,11 +21,17 @@
             <br><br>
             <label>semester</label>
             <input type="text" ng-model="semester">
+            <br><br>
+            <label>usn</label>
+            <input type="text" ng-model="USN">
             <hr>
+            <button ng-click="addstudents()"></button>
+            <button ng-click="addUSN()"></button>
             <h3>student deatils</h3>
             <p>name:{{name}}</p>
             <p>department:{{department}}</p>
             <p>semester:{{semester}}</p>
+            <p>usn:{{USN}}</p>
             <h2>student details</h2>
             <ul>
                 <li ng-repeat="student in students">{{student}}</li>
