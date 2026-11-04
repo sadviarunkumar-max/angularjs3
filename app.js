@@ -16,5 +16,11 @@ app.controller('studentcontroller', function($scope)
         "Dimple S N",
         "Lavanya U M",
     ];
+    $scope.USN=[
+        "4MH25IS004",
+        "4MH25IS028",
+        "4MH25IS057",
+        "4MH25IS025",
+    ];
 }
 );
